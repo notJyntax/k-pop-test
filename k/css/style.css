@@ -37,7 +37,7 @@ body{
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  width: 360px;
+  width: 340px;
   height: 544px;
   background-color: #F1F3EE;
   opacity: 0.39;
@@ -76,9 +76,10 @@ body{
 }
 
 .home__screen .describe{
-  padding: 0 1rem;
+  padding: 0 2rem;
   text-align: center;
   font-size: 14px;
+  line-height: 2rem;
 }
 
 .home__box .btn{
@@ -119,7 +120,7 @@ body{
   filter: drop-shadow(2px 3px 2px rgba(0,0,0,.25));
 }
 
-.link__copy, .result__box .btn{
+.link__copy_btn, .result__box .btn{
   display: flex;
   font-size: 24px;
   position: absolute;
@@ -131,6 +132,15 @@ body{
   border-radius: 8px;
   padding: 0 1rem;
   align-items: center;
+}
+.link__copy_btn, .restart_btn{
+  width: 15rem;
+}
+.restart_btn{
+ top:570px !important;
+}
+.restart_btn span{
+  padding-left: 2.5rem;
 }
 
 .quiz__box, .result__box{
@@ -203,6 +213,7 @@ body{
 
 .result__describtion{
   padding: 1rem 2rem 2rem 2rem;
+  line-height: 2.3rem;
 }
 
 .btn img{
@@ -212,7 +223,10 @@ body{
 
 .result__describtion p:first-child{
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 4rem;
+  text-align: center;
+  padding-bottom: 1.3rem;
 }
 
 .option__container span{

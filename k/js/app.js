@@ -10,6 +10,18 @@ const startBtn = homeBox.querySelector(".btn");
 const goHomeBtn = resultBox.querySelector(".btn");
 const resultText = resultBox.querySelector(".result__describtion");
 
+const copyLinkBtn = document.querySelector(".link__copy_btn");
+copyLinkBtn.addEventListener("click", copyToClipboard);
+function copyToClipboard(){
+const link_textarea = document.createElement('textarea');
+const siteUrl = document.createTextNode('https://github.com/notJyntax/k-pop-test');
+link_textarea.appendChild(siteUrl);
+link_textarea.style.opacity="0";
+document.body.appendChild(link_textarea);
+link_textarea.select();
+document.execCommand('copy');
+};
+
 startBtn.addEventListener("click", startQuiz);
 optionList.addEventListener("click", checkAnswer);
 goHomeBtn.addEventListener("click", goHome);
