@@ -73,7 +73,7 @@ function getNewQuestion(){
 }
 
 function finishQuiz(){
-  clearInterval(time);
+  clearInterval(timeLine);
 
   quizBox.classList.remove("active");
   resultBox.classList.add("active");
