@@ -74,7 +74,7 @@ body {
   position: absolute;
   top: 6rem;
   left: 50%;
-  width: 330px;
+  width: 308px;
   transform: translateX(-50%);
   border: var(--border);
   border-radius: var(--border-radius);
@@ -84,7 +84,7 @@ body {
 
 .screen .screen__header {
   text-align: center;
-  font-size: 16px;
+  font-size: 17px;
   border-bottom: var(--border);
 }
 
@@ -100,18 +100,16 @@ body {
 }
 
 .screen .screen__text {
-  padding: 0 1rem;
+  padding: 0 2rem 2rem;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 2rem;
 }
 
 .screen__text h3 {
   font-size: 2rem;
 }
 
-.result .screen__text {
-  padding-bottom: 2rem;
-}
 
 .home .btn {
   position: absolute;
@@ -153,8 +151,9 @@ body {
 
 .link-copy-btn,
 .result .btn {
+  width:15rem;
   display: flex;
-  font-size: 24px;
+  font-size: 19px;
   position: absolute;
   top: 677px;
   left: 50%;
@@ -162,14 +161,32 @@ body {
   background-color: var(--bg-color-white);
   border: var(--border);
   border-radius: 10px;
-  padding: 0 1rem;
+  padding: 0 2rem 0rem 1.4rem;
   align-items: center;
 }
-
+.link-copy-btn img,.restart-btn img{
+  width: 40px;
+  height: 40px;
+}
 .quiz,
 .result {
   margin-top: 4rem;
 }
+.result .screen__text h3{
+  padding-top: 2rem;
+}
+.result .screen__text p{
+  line-height:1.9rem;
+  padding:2rem 0.4rem 2rem 0.6rem;
+}
+.result .link-copy-btn{
+  top:580px;
+}
+
+.result .restart-btn span{
+  padding-left: 1.6rem;
+}
+
 
 .quiz__container {
   text-align: center;
@@ -210,10 +227,6 @@ body {
   background-color: #242a4a;
 }
 
-/* .btn img {
-  width: 48px;
-  height: 48px;
-} */
 
 .option__container span {
   display: block;

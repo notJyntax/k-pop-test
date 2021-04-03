@@ -6,7 +6,7 @@ const quizText = quizBox.querySelector(".quiz__text");
 const quizImg = quizBox.querySelector(".quiz__img");
 const optionList = quizBox.querySelector(".option__container");
 const startBtn = homeBox.querySelector(".btn");
-const goHomeBtn = resultBox.querySelector(".btn");
+const goHomeBtn = resultBox.querySelector(".restart-btn");
 const resultText = resultBox.querySelector(".result__body .screen__text");
 
 startBtn.addEventListener("click", startQuiz);
@@ -92,3 +92,15 @@ function finishQuiz(){
 function goHome(){
   window.location.reload();
 }
+
+const copyLinkBtn = document.querySelector(".link-copy-btn");
+copyLinkBtn.addEventListener("click", copyToClipboard);
+function copyToClipboard(){
+  const link_textarea = document.createElement('textarea');
+  const siteUrl = document.createTextNode('https://github.com/notJyntax/k-pop-test');
+  link_textarea.appendChild(siteUrl);
+  link_textarea.style.opacity="0";
+  document.body.appendChild(link_textarea);
+  link_textarea.select();
+document.execCommand('copy');
+};
