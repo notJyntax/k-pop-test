@@ -93,13 +93,14 @@ function goHome(){
   window.location.reload();
 }
 
-const copyLinkBtn = document.querySelector(".link-copy-btn");
-copyLinkBtn.addEventListener("click", copyToClipboard);
+
+const copyLinkBtns = document.querySelectorAll(".link-copy-btn");
+copyLinkBtns.forEach(copyLinkBtn => copyLinkBtn.addEventListener("click", copyToClipboard));
+
 function copyToClipboard(){
   const link_textarea = document.createElement('textarea');
   const siteUrl = document.createTextNode(window.location.href);
   link_textarea.appendChild(siteUrl);
-  link_textarea.style.opacity="0";
   document.body.appendChild(link_textarea);
   alert("URL 복사가 완료되었습니다."); 
   link_textarea.select();
