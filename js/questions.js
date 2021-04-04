@@ -1,7 +1,7 @@
 const quiz = [
     {
         q:"다음 중 사진 속 가수가 부른 노래로 알맞은 것은?",
-        image: '../images/1.png',
+        image: './images/1.png',
         options:['구두', '결국 너잖아', '미워도 사랑하니까', '연애소설'],
         answer:'구두',
     },
