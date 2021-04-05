@@ -110,7 +110,6 @@ body {
   font-size: 2rem;
 }
 
-
 .home .btn {
   position: absolute;
   top: 429px;
@@ -151,7 +150,7 @@ body {
 
 .link-copy-btn,
 .result .btn {
-  width:15rem;
+  width: 15rem;
   display: flex;
   font-size: 19px;
   position: absolute;
@@ -164,7 +163,9 @@ body {
   padding: 0 2rem 0rem 1.4rem;
   align-items: center;
 }
-.link-copy-btn img,.restart-btn img{
+
+.link-copy-btn img,
+.restart-btn img {
   width: 40px;
   height: 40px;
 }
@@ -172,21 +173,22 @@ body {
 .result {
   margin-top: 4rem;
 }
-.result .screen__text h3{
+.result .screen__text h3 {
   padding-top: 2rem;
 }
-.result .screen__text p{
-  line-height:1.9rem;
-  padding:2rem 0.4rem 2rem 0.6rem;
-}
-.result .link-copy-btn{
-  top:580px;
+
+.result .screen__text p {
+  line-height: 1.9rem;
+  padding: 2rem 0.4rem 2rem 0.6rem;
 }
 
-.result .restart-btn span{
+.result .link-copy-btn {
+  top: 580px;
+}
+
+.result .restart-btn span {
   padding-left: 1.6rem;
 }
-
 
 .quiz__container {
   text-align: center;
@@ -195,15 +197,16 @@ body {
   border: var(--border);
   padding: 1rem;
 }
+
 .quiz__img {
-  width: 250px;
-  height: 200px;
   margin: 0 auto;
   margin-bottom: 1rem;
-  overflow: hidden;
 }
+
 .quiz__img img {
-  width: 100%;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .option__container {
@@ -226,7 +229,6 @@ body {
   border-radius: 5px;
   background-color: #242a4a;
 }
-
 
 .option__container span {
   display: block;

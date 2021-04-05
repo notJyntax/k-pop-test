@@ -25,7 +25,7 @@ const quiz = [
     },
     {
         q:'다음 앨범의 타이틀곡은?',
-        image: './images/5.png',
+        image: './images/5.jpg',
         options:['첫사랑니', 'NUABO', 'Electric Shock', '피노키오'],
         answer:'Electric Shock',
     },
@@ -61,13 +61,13 @@ const quiz = [
     },
     {
         q:'다음 사진 속 인물로 올바른 것은?',
-        image: './images/11.png',
+        image: './images/11.jpg',
         options:['이효리 - 비', '닉쿤 - 아이비', '택연 - 윤아', '트러블 메이커'],
         answer:'택연 - 윤아',
     },
     {
         q:'다음 OST곡의 드라마는?',
-        image: './images/12.png',
+        image: './images/12.jpg',
         options:['베토벤 바이러스', '드림하이', '꽃보다 남자', '공부의 신'],
         answer:'꽃보다 남자',
     },
@@ -85,13 +85,13 @@ const quiz = [
     },
     {
         q:'다음 사진 속 소속사의 가수가 부른 노래가 아닌 것은?',
-        image: './images/15.png',
+        image: './images/15.jpg',
         options:['사.계.한', 'Shock', '한번 더 OK', '피노키오'],
         answer:'Shock',
     },
     {
         q:'다음 사진 속 음악 방송은?',
-        image: './images/16.png',
+        image: './images/16.jpg',
         options:['Mnet', 'SBS', 'KBS', 'MBC'],
         answer:'MBC',
     },
