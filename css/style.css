@@ -6,11 +6,6 @@
   font-style: normal;
 }
 
-.btn img {
-  width: 48px;
-  height: 48px;
-}
-
 :root {
   --bg-color-white: #f9faf5;
   --bg-color-blue: #abbbd2;
@@ -28,15 +23,17 @@ button {
   font: inherit;
 }
 
-button svg,
-button img {
-  margin-right: 1rem;
-}
-
 body {
   font-family: "PFStardust";
   width: 375px;
   margin: 0 auto;
+}
+
+.ad {
+  width: 100%;
+  height: 100px;
+  background-color: #c9d2de;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .home,
@@ -53,26 +50,19 @@ body {
 
 .home__body {
   position: relative;
-  top: 4rem;
+  top: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  display: block;
-  width: 360px;
-  height: 544px;
-  background-color: #f1f3ee;
-  opacity: 0.39;
-  -webkit-box-shadow: inset -12px -23px 30px #929090;
-  -ms-box-shadow: inset -12px -23px 30px #929090;
-  -moz-box-shadow: inset -12px -23px 30px #929090;
-  -o-box-shadow: inset -12px -23px 30px #929090;
-  box-shadow: inset -12px -23px 30px #929090;
-  border-radius: 32px;
   z-index: 0;
+}
+
+.home__body img {
+  width: 100%;
 }
 
 .screen {
   position: absolute;
-  top: 6rem;
+  top: 4rem;
   left: 50%;
   width: 308px;
   transform: translateX(-50%);
@@ -154,7 +144,7 @@ body {
   display: flex;
   font-size: 19px;
   position: absolute;
-  top: 677px;
+  top: 660px;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--bg-color-white);
@@ -168,11 +158,20 @@ body {
 .restart-btn img {
   width: 40px;
   height: 40px;
+  margin-right: 1rem;
+  flex: 1;
 }
+
+.link-copy-btn span,
+.result .btn span {
+  flex: 2;
+}
+
 .quiz,
 .result {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
+
 .result .screen__text h3 {
   padding-top: 2rem;
 }
@@ -184,10 +183,6 @@ body {
 
 .result .link-copy-btn {
   top: 580px;
-}
-
-.result .restart-btn span {
-  padding-left: 1.6rem;
 }
 
 .quiz__container {
